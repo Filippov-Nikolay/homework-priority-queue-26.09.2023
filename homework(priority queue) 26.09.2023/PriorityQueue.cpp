@@ -1,9 +1,9 @@
-#include <iostream>
+п»ї#include <iostream>
 #include "PriorityQueue.h"
 
 using namespace std;
 
-// Конструктор
+// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
 PriorityQueue::PriorityQueue(int maxSize) {
 	maxQueueLength = maxSize;
 	wait = new client[maxQueueLength];
@@ -25,7 +25,7 @@ void PriorityQueue::Add(string n, int p) {
 
 void PriorityQueue::Show() {
 	for (int i = 0; i < queueLength; i++)
-		cout << "Имя: " << wait[i].name << ", приоритет: " << priority[i] << endl;
+		cout << "РРјСЏ: " << wait[i].name << ", РїСЂРёРѕСЂРёС‚РµС‚: " << priority[i] << endl;
 }
 
 string PriorityQueue::Extract() {

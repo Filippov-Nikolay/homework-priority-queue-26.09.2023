@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 
 using namespace std;
@@ -8,26 +8,26 @@ struct client {
 };
 
 class PriorityQueue {
-	client* wait; // Очередь
-	int* priority; // Приоритет
+	client* wait; // РћС‡РµСЂРµРґСЊ
+	int* priority; // РџСЂРёРѕСЂРёС‚РµС‚
 
-	int maxQueueLength; // Макс. размер очереди
-	int queueLength; // Текущий размер очереди
+	int maxQueueLength; // РњР°РєСЃ. СЂР°Р·РјРµСЂ РѕС‡РµСЂРµРґРё
+	int queueLength; // РўРµРєСѓС‰РёР№ СЂР°Р·РјРµСЂ РѕС‡РµСЂРµРґРё
 public:
 	PriorityQueue(int maxSize);
 	~PriorityQueue();
 
-	void Add(string, int); // Добавление элемента
-	void Show(); // Вывод очереди
-	// void ShowPriority(); // Вывод очереди по приоритетам
+	void Add(string, int); // Р”РѕР±Р°РІР»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р°
+	void Show(); // Р’С‹РІРѕРґ РѕС‡РµСЂРµРґРё
+	// void ShowPriority(); // Р’С‹РІРѕРґ РѕС‡РµСЂРµРґРё РїРѕ РїСЂРёРѕСЂРёС‚РµС‚Р°Рј
 
-	string Extract(); // Извлечение элемента
+	string Extract(); // РР·РІР»РµС‡РµРЅРёРµ СЌР»РµРјРµРЅС‚Р°
 
-	void Clear(); // Очистка очереди
+	void Clear(); // РћС‡РёСЃС‚РєР° РѕС‡РµСЂРµРґРё
 
-	bool IsEmpty(); // Проверка на сущ. элементов
-	bool IsFull(); // Проверка на переполнение очереди
+	bool IsEmpty(); // РџСЂРѕРІРµСЂРєР° РЅР° СЃСѓС‰. СЌР»РµРјРµРЅС‚РѕРІ
+	bool IsFull(); // РџСЂРѕРІРµСЂРєР° РЅР° РїРµСЂРµРїРѕР»РЅРµРЅРёРµ РѕС‡РµСЂРµРґРё
 
-	int GetCount(); // Получение кол-во элементов
+	int GetCount(); // РџРѕР»СѓС‡РµРЅРёРµ РєРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ
 };
 
