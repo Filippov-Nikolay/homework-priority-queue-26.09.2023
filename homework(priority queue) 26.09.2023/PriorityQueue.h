@@ -1,11 +1,8 @@
 ﻿#pragma once
 #include <iostream>
+#include "client.h"
 
 using namespace std;
-
-struct client {
-	string name;
-};
 
 class PriorityQueue {
 	client* wait; // Очередь
